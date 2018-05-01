@@ -8,8 +8,7 @@ path_destination = "ripped_png/"
 
 with open(fname) as f:
     content = f.readlines()
-# you may also want to remove whitespace characters like `\n` at the end of each line
-content = [x.strip() for x in content]
+content = [x.strip() for x in content] # remove whitespace characters like `\n` at the end of each line
 
 counter = 0
 for product in content:
